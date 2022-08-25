@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    overscroll-behavior-x: none;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:#0F0E0E;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    background-color:#0F0E0E;
+    height: 100%;
+    align-items: center;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 75vh;
+    height: 100%;
+    overflow: hidden;
+}
+
+header {
+    border-bottom: 1px solid rgb(58, 58, 60);
+    text-transform: uppercase;
+}
+
+.title {
+    color: #EEEEEE;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0.4rem 0 0.4rem 0;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#question-container {
+    height: 50px;
+    padding-top: 50px;
+}
+
+#question-text {
+    color: #EEEEEE;
+    font-size: 1.9rem;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Board */
+#board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.board-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(58, 58, 60);
+    margin: 2px;
+    min-width: 60px;
+    height: 60px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: gainsboro;
+    text-transform: uppercase;
+}
+
+/* Keyboard */
+#keyboard-container {
+    height: 200px;
+    padding: 20px;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 8px;
+    touch-action: manipulation;
+}
+
+.keyboard-row button {
+    font-family: inherit;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    height: 60px;
+    cursor: pointer;
+    background-color: rgb(129, 131, 132);
+    color: rgb(215, 218, 220);
+    flex-grow: 1;
+    text-transform: uppercase;
+    margin-right: 6px;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.keyboard-row button.wide-button {
+    flex-grow: 1.5;
+}
+
+.spacer {
+    flex-grow: 0.5;
+}
